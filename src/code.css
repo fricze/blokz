@@ -1,0 +1,105 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.App-header {
+  padding-left: 30vw;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 34px;
+  white-space: break-spaces;
+  font-family: Monaco, "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+span {
+  width: calc(var(--length) * 1ch);
+  opacity: 1;
+  display: inline-block;
+  height: 1lh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.remove {
+  @starting-style {
+    width: calc(var(--length) * 1ch);
+    opacity: 1;
+  }
+
+  width: calc(var(--new-length) * 1ch);
+  opacity: 0;
+}
+
+.appear {
+  @starting-style {
+    opacity: 0;
+  }
+
+  margin-left: calc(var(--length) * -1ch);
+  transition-delay: 0.6s;
+}
+
+.replaced {
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+@keyframes new-appear {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: inline-block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.new {
+  /* animation: new-appear;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.6s; */
+}
+
+.empty {
+  /* @starting-style {
+    width: calc(var(--start) * 1ch);
+    display: inline-block;
+    opacity: 1;
+  }
+
+  opacity: 0;
+
+  transition:
+    0s display,
+    0.6s width,
+    0.6s opacity;
+  transition-behavior: allow-discrete;
+  transition-delay: 0.6s, 0s, 0s;
+  display: none; */
+}
